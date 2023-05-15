@@ -1,16 +1,23 @@
+/* fuente de google */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
 
-
-/* BARRA de navegacion formato */
+/* BARRA de navegacion formato  falta centrar*/
 .navbar-dark { 
         font-family: 'Oswald', sans-serif; 
         font-size: 20px;
-        background-color: black;
-}
+        background-color: black;}
 img {width: 150px;}
-
 .nav-link:hover {color:#6d0f1c !important;}
 .nav-link:active {color:#6d0f1c !important; }
 
-/* a.navbar-brand {justify-content: center;} */
-/* .container-fluid {justify-content: center;} */
+/* carrusel */
+
+.c-item {margin-top: 175px;
+        height: 700px;
+font-size: xx-large;}
+
+.c-img { height: 100%;
+        object-fit:cover;
+        filter: brightness(0.6);}
+
+

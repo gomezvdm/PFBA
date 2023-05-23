@@ -1,8 +1,8 @@
 document.getElementById("idheader").innerHTML =`
-<nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="/IMG/LOGO/Black_Minimal_Typographic_Brand_Name_Initials_Monogram_Logo-removebg-preview.png" class="a-img" alt="logo inicio"></a>
+      <img src="IMG/Black_Minimal_Typographic_Brand_Name_Initials_Monogram_Logo-removebg-preview.png" class="a-img" alt="logo inicio"></a>
   
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,21 +12,21 @@ document.getElementById("idheader").innerHTML =`
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
       <li class=nav-link">
-        <a class="nav-link" aria-current="page" href="/index.html">INICIO </a> </li>
+        <a class="nav-link" aria-current="page" href="index.html">INICIO </a> </li>
         <li class="nav-item">
-          <a class="nav-link" href="/PAGES/labodega.html#LABODEGA">LA BODEGA</a>
+          <a class="nav-link" href="PAGES\labodega.html">LA BODEGA</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/PAGES/experiencias.html">EXPERIENCIAS</a>
+          <a class="nav-link" href="PAGES\experiencias.html">EXPERIENCIAS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/PAGES/vinos.html">VINOS</a>
+          <a class="nav-link" href="PAGES\vinos.html">VINOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/PAGES/galeria.html">GALERIA</a>
+          <a class="nav-link" href="PAGES\galeria.html">GALERIA</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/PAGES/contacto.html">CONTACTO</a>
+          <a class="nav-link" href="PAGES\contacto.html">CONTACTO</a>
         </li>
       </ul>
     </div>

@@ -1,0 +1,127 @@
+/* fuente de google */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+
+body { background-image:url(../IMG/2.png);
+background-repeat: no-repeat;
+background-size:cover;
+font-size: 20px;}
+
+/* BARRA de navegacion formato  falta centrar*/
+.navbar-dark { 
+        font-family: 'Oswald', sans-serif; 
+        font-size: 30px;
+        background-color: black;}
+        
+.a-img {width: 200px;}
+
+.nav-link:hover {color:#6d0f1c !important;}
+.nav-link:active {color:#6d0f1c !important; }
+
+/* carrusel */
+
+.c-item {margin-top: 0px;
+        height: 700px;
+font-size: xx-large;}
+
+.c-img { height: 100%;
+        object-fit:cover;
+        filter: brightness(0.6);}
+
+/* FOOTER */
+.bg-light {background-color: black !important;
+color:white !important}
+footer{background-color:#060606;}
+.f-img{width: 250px;}
+
+.text-primary {color: #6d0f1c !important;
+}
+
+/* imagen de fondo*/
+.contenedor1{background-color: rgba(0 , 0 , 0 , 0) !important;}
+
+/* GALERIA LABODEGA */
+.card-title {text-align: center;}
+.card-text {text-align: justify;}
+
+/* IMAGENES DE LA BODEGA */
+.lb-img {width: 500px;
+height: 350px;}
+
+/* LINEACION DE TITULOS EN PAGINA */
+.lb-h3 {text-align: center;}
+.titulosgenerales{text-align: center;
+font-size: 40px;}
+
+.exp-img {width: 650px;
+height:465px;
+justify-content: center; }
+
+.btn-verde .btn-verde:active .btn-verde:visited {text-decoration: none;color: green;}
+.btn-verde:visited {color: green;}
+.btn-verde:active {color: green;}
+
+/* contacto */
+.container-form {
+width: 100%;
+max-width: 1100px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+margin-top: 90px;
+grid-gap: 50px;        
+}
+.container-form h2 { margin-bottom: 15px;
+font-size: 35px
+;}
+
+.container-form p {
+        font-size: 17px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+}
+.container-form a { 
+        font-size: 17px;
+        display: inline-block;
+        text-decoration: none;
+        width: 100%;
+        margin-bottom: 15px;
+        color: black;
+        font-weight: 700; 
+}
+
+.container-form i {
+        color: #6d0f1c;
+        margin-right: 10px;
+}
+
+.container-form form .campo, textarea {
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 15px;
+        border: 1px solid #6d0f1c;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        outline: 0px;
+}
+
+.container-form form textarea {
+        max-width: 530px;
+        min-width: 530px;
+        min-height: 140px;
+        max-height: 140px;
+}
+
+.container-form .btn-enviar {
+        padding: 15px;
+        font-size: 16px;
+        border: none;
+        outline: 0px;
+        background-color: #6d0f1c;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 300ms ease;
+}
+.container-form .btn-enviar {
+        background-color: #6d0f1c;
+}

@@ -108,10 +108,10 @@ document.getElementById("idfooter").innerHTML= `
                 <a href="https://github.com/gomezvdm" class="text-dark" target="_blank"><i class="fab fa-github"></i> </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://wa.me/5491130648763" class="text-dark" target="_blank><i class="fab fa-whatsapp"></i> </a>
+                <a href="https://wa.me/5491130648763" class="text-dark" target="_blank"><i class="fab fa-whatsapp"></i> </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.instagram.com/gomezvdm/" class="text-dark" target="_blank><i class="fab fa-instagram"></i> </a>
+                <a href="https://www.instagram.com/gomezvdm/" class="text-dark" target="_blank"><i class="fab fa-instagram"></i> </a>
               </li>
           </ul>
     </div>  

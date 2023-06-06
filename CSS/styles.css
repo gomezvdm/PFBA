@@ -40,8 +40,25 @@ footer{background-color:#060606;}
 .contenedor1{background-color: rgba(0 , 0 , 0 , 0) !important;}
 
 /* GALERIA LABODEGA */
-.card-title {text-align: center;}
-.card-text {text-align: justify;}
+
+
+/* VIDEO BODEGA */
+.video-container {
+        position: relative;
+        padding-bottom: 40%; /* Proporción del video (16:9) */
+        padding-top: 40px;
+        height: 30px;
+        overflow: hidden;
+      }
+
+      .video-container video {
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
 
 /* IMAGENES DE LA BODEGA */
 .lb-img {width: 500px;

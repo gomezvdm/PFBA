@@ -1,11 +1,14 @@
 /* fuente de google */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@400;600&display=swap');
 
-
+/* imagen de fondo*/
 .fondo { background-image:url(../IMG/2.png);
   background-repeat: no-repeat;
   background-size:cover;
   width: 100%;}
+
+.contenedor1{background-color: rgba(0 , 0 , 0 , 0) !important;}
+
 
 /* BARRA de navegacion formato  */
 .navbar-dark { 
@@ -44,10 +47,6 @@ overflow: auto;}
 
 .text-primary {color: #6d0f1c !important;
 overflow: auto;}
-
-/* imagen de fondo*/
-.contenedor1{background-color: rgba(0 , 0 , 0 , 0) !important;}
-
 
 /* VIDEO BODEGA */
 .video-container {
@@ -138,10 +137,7 @@ overflow: auto;}
 .titulosgenerales{text-align: center;
 font-size: 40px;}
 
-
-
 /* contacto */
-
 .hero-contacto__title > h1 {
   color:#6d0f1c;
   font-family: var(--font-tradeGothicNo20);
@@ -458,23 +454,28 @@ padding-right: 50%; }
 .hero-heritage {
   background-image: url(../IMG/barricas\ de\ vino.jpg);
   background-position-x: 70% !important;
-  max-width: 100%;
+  max-width: 100% !important;
   background-position-y: 0px !important;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 75vh;
   width: 100%;
   display: flex;
+  height: 0;
+  overflow:auto;
+  display: flex;
+  max-width: 100% !important;
   justify-content: center;
   align-items: center;
   position: relative;}
+
   
 .hero-heritage__title > h2 {
   color:#6d0f1c;
   font-family: var(--font-tradeGothicNo20);
   font-size:80px;
   text-transform: uppercase;
-  margin-left: -6px;}
+  margin-left: -6px;;}
 
 h2 {
   display: block;
@@ -503,8 +504,7 @@ h2 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: left;
-  position: relative;}
+  text-align: left;}
 
 .section-1__heritage-content > p {
   margin-bottom:40px !important;
@@ -514,7 +514,8 @@ h2 {
   width: 90%;
   margin:auto;
   margin-top: 1cm;
-  text-align:justify;}
+  text-align:justify;
+overflow:hidden;}
 
 .section-2__heritage-content > p {
   margin-bottom: 1.8rem;
@@ -532,7 +533,12 @@ h2 {
   width: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;}
+  align-items: center;
+  position:relative;
+  max-width: 100% !important;
+  overflow:scroll
+
+;}
 
 .section-2__heritage__title {
     position: relative;}
@@ -540,7 +546,12 @@ h2 {
 .section-2__heritage-container {
   width: 100%;
   display: flex;
+  max-width: 100% !important;
+  position: relative;
+  overflow: auto;
+
   }
+
 
 .section-2__heritage__title > h1 {
   color:#6d0f1c;
@@ -601,8 +612,7 @@ h5 {
 /* EXPERIENCIAS */
 .exp-img {width: 650px;
   height:465px;
-  max-width: 100%;
-  ; }
+  max-width: 100%; }
   
   .btn-verde .btn-verde:active .btn-verde:visited {text-decoration: none;color: green;}
   .btn-verde:visited {color: green;}

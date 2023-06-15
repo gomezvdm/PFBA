@@ -36,17 +36,14 @@
 /* FOOTER */
 .bg-light {
   background-color: black !important;  
-  color:white !important;
-overflow: auto;}
+  color:white !important;}
 
-footer{background-color:#060606;
-overflow: auto;}
+footer{background-color:#060606;}
 
 .f-img{width: 250px;
   max-width: 100%;}
 
-.text-primary {color: #6d0f1c !important;
-overflow: auto;}
+.text-primary {color: #6d0f1c !important;}
 
 /* VIDEO BODEGA */
 .video-container {
@@ -536,8 +533,6 @@ overflow:hidden;}
   align-items: center;
   position:relative;
   max-width: 100% !important;
-  overflow:scroll
-
 ;}
 
 .section-2__heritage__title {
@@ -547,10 +542,7 @@ overflow:hidden;}
   width: 100%;
   display: flex;
   max-width: 100% !important;
-  position: relative;
-  overflow: auto;
-
-  }
+  position: relative;}
 
 
 .section-2__heritage__title > h1 {

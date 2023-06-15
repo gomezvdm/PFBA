@@ -5,15 +5,16 @@
 .fondo { background-image:url(../IMG/2.png);
   background-repeat: no-repeat;
   background-size:cover;
-  font-size: 20px;}
+  width: 100%;}
 
-/* BARRA de navegacion formato  falta centrar*/
+/* BARRA de navegacion formato  */
 .navbar-dark { 
   font-family: 'Oswald', sans-serif; 
   font-size: 30px;
   background-color: black;}
 
-.a-img {width: 100px;}
+.a-img {width: 100px;
+  max-width: 100%;}
 
 .nav-link:hover {color:#6d0f1c !important;}
 .nav-link:active {color:#6d0f1c !important; }
@@ -26,18 +27,23 @@
 
 .c-img { height: 100%;
   object-fit:cover;
-  filter: brightness(0.6);}
+  filter: brightness(0.6);
+  max-width: 100%;}
 
 /* FOOTER */
 .bg-light {
   background-color: black !important;  
-  color:white !important}
+  color:white !important;
+overflow: auto;}
 
-footer{background-color:#060606;}
+footer{background-color:#060606;
+overflow: auto;}
 
-.f-img{width: 250px;}
+.f-img{width: 250px;
+  max-width: 100%;}
 
-.text-primary {color: #6d0f1c !important;}
+.text-primary {color: #6d0f1c !important;
+overflow: auto;}
 
 /* imagen de fondo*/
 .contenedor1{background-color: rgba(0 , 0 , 0 , 0) !important;}
@@ -65,14 +71,17 @@ footer{background-color:#060606;}
 
 /* CARDS VINOS */
 .contenedor {
+  overflow: hidden;
   display: flex;
-  justify-content: center;}
+  justify-content: center;
+  max-width: 100%;}
       
 .tarjeta {
   width: 300px;
   height: 400px;
   perspective: 1000px;
-  margin: 0 10px;}
+  margin: 0 10px;
+  max-width: 100%;}
       
 .descripcion {
   background-color: rgb(55, 19, 19,60%);
@@ -107,7 +116,8 @@ footer{background-color:#060606;}
 .front img {
   width: 100%;
   height: 100%;
-  object-fit: cover;}
+  object-fit: cover;
+  max-width: 100%;}
       
 .back {
   transform: rotateY(180deg);
@@ -128,13 +138,7 @@ footer{background-color:#060606;}
 .titulosgenerales{text-align: center;
 font-size: 40px;}
 
-.exp-img {width: 650px;
-height:465px;
-justify-content: center; }
 
-.btn-verde .btn-verde:active .btn-verde:visited {text-decoration: none;color: green;}
-.btn-verde:visited {color: green;}
-.btn-verde:active {color: green;}
 
 /* contacto */
 
@@ -162,7 +166,7 @@ justify-content: center; }
   box-sizing: border-box;
   position: relative;}
 
-  h1 {
+h1 {
     display: block;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
@@ -170,7 +174,7 @@ justify-content: center; }
     margin-inline-end: 0px;
     font-weight: bold;}
 
-  .hero-contacto__title {
+.hero-contacto__title {
     text-align: center;
     position: relative;}
 
@@ -183,10 +187,12 @@ justify-content: center; }
   min-height: 75vh;
   width: 100%;
   height: 0 !important;
+  overflow:auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;}
+  position: relative;
+  max-width: 100%;}
 
 .container-form h2 { margin-bottom: 15px;
   font-size: 35px;}
@@ -196,8 +202,10 @@ justify-content: center; }
   max-width: 1100px;
   margin: auto;
   display: grid;
+  position: relative;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;}
+  grid-gap: 1%;
+overflow:auto;}
 
 .container-form p {
   font-size: 17px;
@@ -260,6 +268,7 @@ justify-content: center; }
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,6 +319,7 @@ justify-content: center; }
   min-height: 100vh;
   background-image: url(../IMG/SECTION2.png);
   background-position: center;
+  max-width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -384,6 +394,7 @@ p {
   background-image: url(../IMG/section33.webp);
   background-position: center;
   background-position-y: 30%;
+  max-width: 100%;
   background-position-x: 60%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -447,6 +458,7 @@ padding-right: 50%; }
 .hero-heritage {
   background-image: url(../IMG/barricas\ de\ vino.jpg);
   background-position-x: 70% !important;
+  max-width: 100%;
   background-position-y: 0px !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -587,6 +599,15 @@ h5 {
   position: relative;}
 
 /* EXPERIENCIAS */
+.exp-img {width: 650px;
+  height:465px;
+  max-width: 100%;
+  ; }
+  
+  .btn-verde .btn-verde:active .btn-verde:visited {text-decoration: none;color: green;}
+  .btn-verde:visited {color: green;}
+  .btn-verde:active {color: green;}
+
 .section-titulo-experiencias-title > h2 {
   color:#6d0f1c;
   font-family: var(--font-tradeGothicNo20);
@@ -630,6 +651,12 @@ h3.card-title {
   margin: 0 auto;
   justify-content: center;}
 
+  /*vinos */ 
+
+.texto-vinos{
+  overflow: auto;
+  position: relative;
+}
 .section-titulo-vinos-title > h2 {
     color:#6d0f1c;
     font-family: var(--font-tradeGothicNo20);
@@ -702,3 +729,29 @@ div.centrar.vinos.margen {
   margin-top: 1cm !important;
   text-align:justify !important;}
 
+  /* responsive*/ 
+  @media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas, como teléfonos móviles */
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para tabletas y pantallas más grandes */
+  }
+  
+  @media (min-width: 1025px) {
+    /* Estilos para pantallas de escritorio */
+  }
+
+  /* mapa de contacto*/ 
+  .map-responsive iframe {
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  position: absolute;}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;}

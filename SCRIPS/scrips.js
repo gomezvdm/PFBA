@@ -2,7 +2,7 @@ document.getElementById("idheader").innerHTML =`
 <nav class="navbar navbar-expand-lg navbar-dark">
 <div class="container-fluid">
   <a class="navbar-brand" href="#">
-    <img src="IMG/Black_Minimal_Typographic_Brand_Name_Initials_Monogram_Logo-removebg-preview.png" class="a-img" alt="logo inicio"></a>
+    <img src="../IMG/Black_Minimal_Typographic_Brand_Name_Initials_Monogram_Logo-removebg-preview.png" class="a-img" alt="logo inicio"></a>
 
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,7 @@ document.getElementById("idfooter").innerHTML= `
       <h5 class="text-uppercase mb-4 font-weight-bold text-primary"></h5>
       
       <a class="navbar-brand" href="#">
-        <img src="IMG/Black_Minimal_Typographic_Brand_Name_Initials_Monogram_Logo-removebg-preview.png" class="f-img" alt="logo de footer"></a >
+        <img src="../IMG/Black_Minimal_Typographic_Brand_Name_Initials_Monogram_Logo-removebg-preview.png" class="f-img" alt="logo de footer"></a >
         
     </div>
     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">

@@ -5,10 +5,10 @@
 .fondo { background-image:url(../IMG/2.png);
   background-repeat: no-repeat;
   background-size:cover;
+  position:relative;
   width: 100%;}
 
 .contenedor1{background-color: rgba(0 , 0 , 0 , 0) !important;}
-
 
 /* BARRA de navegacion formato  */
 .navbar-dark { 
@@ -23,6 +23,9 @@
 .nav-link:active {color:#6d0f1c !important; }
 
 /* carrusel */
+.carousel {
+margin-bottom: 0rem;
+position:0;}
 
 .c-item {margin-top: 0px;
   height: 700px;
@@ -30,6 +33,7 @@
 
 .c-img { height: 100%;
   object-fit:cover;
+  position: absolute;
   filter: brightness(0.6);
   max-width: 100%;}
 
@@ -63,16 +67,20 @@ footer{background-color:#060606;}
 
 /* IMAGENES DE LA BODEGA */
 .lb-img {width: 500px;
-  height: 350px;}
+  height: 350px;
+}
 
 /* CARDS VINOS */
 .contenedor {
   overflow: hidden;
   display: flex;
+  align-items: center;
   justify-content: center;
   max-width: 100%;}
       
 .tarjeta {
+  align-items: center;
+  flex-direction: ;
   width: 300px;
   height: 400px;
   perspective: 1000px;
@@ -135,14 +143,42 @@ footer{background-color:#060606;}
 font-size: 40px;}
 
 /* contacto */
-.hero-contacto__title > h1 {
+
+.hero-contacto {
+  background-image: url(../IMG/uva\ de\ fondo.jpg);
+  background-position-x: 50% !important;
+  max-width: 100% !important;
+  background-position-y: 0px !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 75vh;
+  width: 100%;
+  display: flex;
+  height: 0;
+  overflow:auto;
+  display: flex;
+  max-width: 100% !important;
+  justify-content: center;
+  text-align: center;
+  align-items: center;}
+
+
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;}
+
+.hero-contacto__title > h2 {
   color:#6d0f1c;
   font-family: var(--font-tradeGothicNo20);
   font-size:80px;
   text-transform: uppercase;
   margin-left: -6px;}
-
-.hero-contacto__title > h2 {
+    
+.hero-contacto__title > h1 {
   margin-top: -93px;
   margin-left: 18px;
   font-family: 'Great Vibes', cursive;
@@ -157,38 +193,24 @@ font-size: 40px;}
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  position: relative;}
+  position: relative;}          
 
-h1 {
-    display: block;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;}
 
-.hero-contacto__title {
-    text-align: center;
-    position: relative;}
-
-.hero-contacto {
-  background-image: url(../IMG/uva\ de\ fondo.jpg);
-  background-position-x: 70% !important;
-  background-position-y: 0px !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 75vh;
-  width: 100%;
-  height: 0 !important;
-  overflow:auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  max-width: 100%;}
-
-.container-form h2 { margin-bottom: 15px;
+.container-form h1 { margin-bottom: 15px;
   font-size: 35px;}
+
+.map-responsive iframe {
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  position: absolute;}
+  
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;}
 
 .container-form {
   width: 100%;
@@ -199,7 +221,6 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1%;
 overflow:auto;}
-
 .container-form p {
   font-size: 17px;
   line-height: 1.6;
@@ -254,18 +275,27 @@ overflow:auto;}
   width: 100%;
   min-height: 100vh;}
 
+
+  /*principal*/
 .hero {
-  width: 100%;
-  min-height: 100vh;
   background-image: url(../IMG/tierras.jpg);
   background-position: center;
-  background-size: cover;
+  max-width: 100% !important;
   background-repeat: no-repeat;
-  max-width: 100%;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  overflow:visible;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
   position: relative;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -276,13 +306,14 @@ overflow:auto;}
 .hero__bg {
   position: absolute;
   top: 0;
+  margin: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.16);
   min-height: 100vh;}
 
 .hero__content {
   min-height: 100vh;
-  position: relative;
+  position:absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,13 +323,10 @@ overflow:auto;}
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 100%;
-  text-align: center;
-  z-index: 999;}
+  width:95%;
+  text-align: center;}
 
 .hero__content > p {
   font-family: 'Oswald', sans-serif;
@@ -309,10 +337,15 @@ overflow:auto;}
 
 .section-1__container {
   width: 100%;
-  min-height: 100vh;
+  height: 45em !important; /* tamaño imagen alto*/
   background-image: url(../IMG/SECTION2.png);
-  background-position: center;
-  max-width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  opacity: 0.8;
+  z-index: -1;}
+
+  /*max-width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -326,7 +359,7 @@ overflow:auto;}
   -ms-flex-align: center;
   align-items: center;
   background-position: 13% !important;
-  position: relative;}
+  position: relative;}*/
 
 .section-1__content {
   padding-left: 60rem;
@@ -369,8 +402,9 @@ overflow:auto;}
 
 p {
   display: block;
-  margin-block-start: 1em;
+  margin-block-start: 0em;
   margin-block-end: 1em;
+  margin-top: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-family:'Oswald', sans-serif ; }
@@ -450,7 +484,7 @@ padding-right: 50%; }
   /* la bodega */
 .hero-heritage {
   background-image: url(../IMG/barricas\ de\ vino.jpg);
-  background-position-x: 70% !important;
+  background-position-x: 50% !important;
   max-width: 100% !important;
   background-position-y: 0px !important;
   background-repeat: no-repeat;
@@ -463,8 +497,7 @@ padding-right: 50%; }
   display: flex;
   max-width: 100% !important;
   justify-content: center;
-  align-items: center;
-  position: relative;}
+  align-items: center;}
 
   
 .hero-heritage__title > h2 {
@@ -613,9 +646,11 @@ h5 {
 .section-titulo-experiencias-title > h2 {
   color:#6d0f1c;
   font-family: var(--font-tradeGothicNo20);
-  font-size:80px;
+  font-size:500%;
   text-transform: uppercase;
-  margin-left: -6px;
+  margin-left:0;
+  align-items: center;
+  text-align: center;
   margin-block-start: 0 !important;}
   
 .section-titulo-experiencias-title {
@@ -732,28 +767,39 @@ div.centrar.vinos.margen {
   text-align:justify !important;}
 
   /* responsive*/ 
+
+  body {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+flex:none;}
+
   @media (max-width: 768px) {
     /* Estilos para pantallas más pequeñas, como teléfonos móviles */
+  body {
+    font-size: 14px !important;
+    margin: 0;
+    min height: 92vh;
+    margin-bottom: 0;
+    margin-top: -2rem;
+  }
   }
   
   @media (min-width: 769px) and (max-width: 1024px) {
     /* Estilos para tabletas y pantallas más grandes */
+  body {
+    font-size: 16px !important;
+    min-height: 92vh;
+    margin-bottom: 0;
+    margin: top -2rem;
+  }
   }
   
+
   @media (min-width: 1025px) {
     /* Estilos para pantallas de escritorio */
+  body {
+    font-size: 18px;
+  }
   }
 
-  /* mapa de contacto*/ 
-  .map-responsive iframe {
-  left: 0;
-  top:0;
-  height: 100%;
-  width: 100%;
-  position: absolute;}
-
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;}

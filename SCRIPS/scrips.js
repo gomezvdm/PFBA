@@ -22,9 +22,6 @@ document.getElementById("idheader").innerHTML =`
       <li class="nav-item">
         <a class="nav-link" href="vinos.html">VINOS</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contacto.html">CONTACTO</a>
-      </li>
     </ul>
   </div>
 </nav>
